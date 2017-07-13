@@ -8,5 +8,20 @@ namespace NASATime
 {
     public class Timer
     {
+        private int startingValue = 10;
+        
+        public string countDown()
+        {
+            string message = "";
+
+            for (int count = startingValue; count > 0; count--)
+            {
+                message = message + count + ", ";
+            }
+
+            message = message + 0;
+
+            return message;
+        }
     }
 }

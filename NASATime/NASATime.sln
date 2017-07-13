@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASATime", "NASATime\NASATime.csproj", "{7592E73A-71F4-4DFA-860F-AC4126F48E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{B1C30D16-FF2A-4654-B7B4-90E09FCCCB49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASATimeTest", "NASATimeTest\NASATimeTest.csproj", "{E6D26F4E-0957-4258-8047-A937F1E2E92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{7592E73A-71F4-4DFA-860F-AC4126F48E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7592E73A-71F4-4DFA-860F-AC4126F48E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7592E73A-71F4-4DFA-860F-AC4126F48E74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B1C30D16-FF2A-4654-B7B4-90E09FCCCB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1C30D16-FF2A-4654-B7B4-90E09FCCCB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1C30D16-FF2A-4654-B7B4-90E09FCCCB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1C30D16-FF2A-4654-B7B4-90E09FCCCB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D26F4E-0957-4258-8047-A937F1E2E92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D26F4E-0957-4258-8047-A937F1E2E92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D26F4E-0957-4258-8047-A937F1E2E92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D26F4E-0957-4258-8047-A937F1E2E92E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
