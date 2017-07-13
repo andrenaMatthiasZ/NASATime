@@ -7,18 +7,23 @@ namespace NASATimeTest
     [TestClass]
     public class TimerTest
     {
+        private Timer timer;
+
+        [ClassInitialize]
+        public void SetUp()
+        {
+            timer = new Timer();
+        }
+
         [TestMethod]
         public void DefaultReturnsTenToZero()
-        {
-            Timer timer = new Timer();
-
+        {            
             Assert.AreEqual("10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0", timer.countDown());
         }
 
         [TestMethod]
         public void negativeStartReturnsZero()
         {
-            Timer timer = new Timer();
             timer.setStartingValue(-1);
 
             Assert.AreEqual("0", timer.countDown());
