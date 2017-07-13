@@ -14,5 +14,14 @@ namespace NASATimeTest
 
             Assert.AreEqual("10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0", timer.countDown());
         }
+
+        [TestMethod]
+        public void negativeStartReturnsZero()
+        {
+            Timer timer = new Timer();
+            timer.setStartingValue(-1);
+
+            Assert.AreEqual("0", timer.countDown());
+        }
     }
 }

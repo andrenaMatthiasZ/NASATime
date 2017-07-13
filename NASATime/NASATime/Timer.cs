@@ -23,5 +23,10 @@ namespace NASATime
 
             return message;
         }
+
+        public void setStartingValue(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
