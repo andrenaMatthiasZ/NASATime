@@ -9,7 +9,7 @@ namespace NASATimeTest
     {
         private Timer timer;
 
-        [ClassInitialize]
+        [TestInitialize]
         public void SetUp()
         {
             timer = new Timer();
