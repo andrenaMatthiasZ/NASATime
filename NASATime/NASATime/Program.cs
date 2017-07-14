@@ -11,7 +11,7 @@ namespace NASATime
             Console.WriteLine("Bitte geben sie den Startwert des Countdowns ein.");
             timer.setStartingValue(int.Parse(Console.ReadLine()));
 
-            Console.WriteLine("Countdown: " + timer.countDown());
+            Console.WriteLine("Countdown: " + timer.CountDown());
         }
     }
 }

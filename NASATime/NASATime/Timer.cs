@@ -1,19 +1,22 @@
-﻿namespace NASATime
+﻿
+
+using NASATime.Util;
+
+namespace NASATime
 {
     public class Timer
     {
         private int startingValue = 10;
         
-        public string countDown()
+        public string CountDown()
         {
             string message = "";
 
             for (int count = startingValue; count > 0; count--)
             {
-                message = message + count + ", ";
+                message = message.CombineWithComma(count.ToString());
             }
-
-            message = message + 0;
+            message = message.CombineWithComma(0.ToString());
 
             return message;
         }

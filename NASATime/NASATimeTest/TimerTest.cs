@@ -17,7 +17,7 @@ namespace NASATimeTest
         [TestMethod]
         public void DefaultReturnsTenToZeroCountDown()
         {            
-            Assert.AreEqual("10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0", timer.countDown());
+            Assert.AreEqual("10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0", timer.CountDown());
         }
 
         [TestMethod]
@@ -25,7 +25,7 @@ namespace NASATimeTest
         {
             timer.setStartingValue(-1);
 
-            Assert.AreEqual("0", timer.countDown());
+            Assert.AreEqual("0", timer.CountDown());
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace NASATimeTest
         {
             timer.setStartingValue(3);
 
-            Assert.AreEqual("3, 2, 1, 0", timer.countDown());
+            Assert.AreEqual("3, 2, 1, 0", timer.CountDown());
         }
     }
 }
