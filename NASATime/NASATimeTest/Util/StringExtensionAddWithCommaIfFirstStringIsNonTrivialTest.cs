@@ -32,6 +32,16 @@ namespace NASATime.Util.Test
             Assert.AreEqual(secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
         }
 
+        [TestMethod()]
+        public void SecondStringTrivialReturnsFirst()
+        {
+            firstString = NON_TRIVIAL_FIRST_STRING;
+            secondString = "";
+            Assert.AreEqual(secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
+        }
+
+
+
 
     }
 }
