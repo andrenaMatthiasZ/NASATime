@@ -8,10 +8,11 @@ namespace NASATime
         {
             Timer timer = new Timer();
 
-            Console.WriteLine("Bitte geben sie den Startwert des Countdowns ein.");
+            Console.WriteLine("Bitte geben Sie den Startwert des Countdowns ein.");
             timer.setStartingValue(int.Parse(Console.ReadLine()));
 
             Console.WriteLine("Countdown: " + timer.CountDown());
+            Console.ReadKey();
         }
     }
 }
