@@ -37,7 +37,7 @@ namespace NASATime.Util.Test
         {
             firstString = NON_TRIVIAL_FIRST_STRING;
             secondString = "";
-            Assert.AreEqual(secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
+            Assert.AreEqual(firstString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
         }
 
 
