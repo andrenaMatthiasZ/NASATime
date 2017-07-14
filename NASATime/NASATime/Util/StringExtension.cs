@@ -12,6 +12,7 @@ namespace NASATime.Util
         {
             String combinedString = firstString;
 
+            // TODO MatthiasZ 14.07.2017: Add case for trivial second string.+
             if (firstString.IsNullOrEmpty())
             {
                 combinedString = secondString;
