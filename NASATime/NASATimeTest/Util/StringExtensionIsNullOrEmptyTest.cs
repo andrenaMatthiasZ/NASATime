@@ -14,7 +14,8 @@ namespace NASATime.Util.Test
         [TestMethod()]
         public void EmptyGivesTrue()
         {
-            Assert.Fail();
+            String str = "";
+            Assert.IsTrue(str.IsNullOrEmpty());
         }
     }
 }

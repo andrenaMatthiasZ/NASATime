@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="TimerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\StringExtensionTests.cs" />
+    <Compile Include="Util\StringExtensionIsNullOrEmptyTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
