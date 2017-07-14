@@ -11,13 +11,15 @@ namespace NASATime.Util
         public static String AddWithCommaIfFirstStringIsNonTrivial( this String firstString ,String secondString)
         {
             String combinedString = firstString;
-
-            // TODO MatthiasZ 14.07.2017: Add case for trivial second string.+
+            
             if (firstString.IsNullOrEmpty())
             {
                 combinedString = secondString;
             }
-            else
+            else if (secondString.IsNullOrEmpty())
+            {
+                combinedString = firstString;
+            } else
             {
                 combinedString = firstString + ", " + secondString;
             }
