@@ -26,7 +26,7 @@ namespace NASATime.Util
 
         public static Boolean IsNullOrEmpty(this String str)
         {
-            return str.Equals(null) || str.Equals("");
+            return str==null || str.Equals("");
         }
     }
 }
