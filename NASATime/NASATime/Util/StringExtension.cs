@@ -12,16 +12,21 @@ namespace NASATime.Util
         {
             String combinedString = firstString;
 
-            if (firstString.Equals(null) || firstString.Equals(""))
+            if (firstString.IsNullOrEmpty())
             {
                 combinedString = secondString;
             }
             else
             {
-                combinedString = firstString + ", ";
+                combinedString = firstString + ", " + secondString;
             }
 
             return combinedString;
+        }
+
+        private static Boolean IsNullOrEmpty(this String str)
+        {
+            return str.Equals(null) || str.Equals("");
         }
     }
 }
