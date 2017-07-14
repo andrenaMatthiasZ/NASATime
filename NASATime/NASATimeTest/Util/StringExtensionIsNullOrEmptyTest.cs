@@ -11,19 +11,23 @@ namespace NASATime.Util.Test
     [TestClass()]
     public class StringExtensionIsNullOrEmptyTest
     {
+        private String str;
+
         [TestMethod()]
         public void EmptyGivesTrue()
         {
-            String str = "";
+            str = "";
             Assert.IsTrue(str.IsNullOrEmpty());
         }
 
         [TestMethod()]
         public void  NullGivesTrue()
         {
-            String str = null;
+            str = null;
             Assert.IsTrue(str.IsNullOrEmpty());
         }
+
+
 
     }
 }
