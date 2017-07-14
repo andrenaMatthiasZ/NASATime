@@ -27,6 +27,12 @@ namespace NASATime.Util.Test
             Assert.IsTrue(str.IsNullOrEmpty());
         }
 
+        [TestMethod()]
+        public void NonTrivialStringGivesFalse()
+        {
+            str = "some text";
+            Assert.IsFalse(str.IsNullOrEmpty());
+        }
 
 
     }
