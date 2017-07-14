@@ -4,11 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+
+
+
 namespace NASATime.Util
 {
     public static class StringExtension
     {
-        public static String AddWithCommaIfFirstStringIsNonTrivial( this String firstString ,String secondString)
+        private const string COMMA_SEPARATOR = ", ";
+
+        public static String CombineWithComma( this String firstString ,String secondString)
         {
             String combinedString = firstString;
             
@@ -21,7 +28,7 @@ namespace NASATime.Util
                 combinedString = firstString;
             } else
             {
-                combinedString = firstString + ", " + secondString;
+                combinedString = firstString + COMMA_SEPARATOR + secondString;
             }
 
             return combinedString;

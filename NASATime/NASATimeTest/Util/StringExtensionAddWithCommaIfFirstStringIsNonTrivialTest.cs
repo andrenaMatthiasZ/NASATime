@@ -21,7 +21,7 @@ namespace NASATime.Util.Test
         {
             firstString = NON_TRIVIAL_FIRST_STRING;
             secondString = NON_TRIVIAL_SECOND_STRING;
-            Assert.AreEqual(firstString + ", " + secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
+            Assert.AreEqual(firstString + ", " + secondString, firstString.CombineWithComma(secondString));
         }
 
         [TestMethod()]
@@ -29,7 +29,7 @@ namespace NASATime.Util.Test
         {
             firstString = "";
             secondString = NON_TRIVIAL_SECOND_STRING;
-            Assert.AreEqual(secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
+            Assert.AreEqual(secondString, firstString.CombineWithComma(secondString));
         }
 
         [TestMethod()]
@@ -37,7 +37,7 @@ namespace NASATime.Util.Test
         {
             firstString = NON_TRIVIAL_FIRST_STRING;
             secondString = "";
-            Assert.AreEqual(firstString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
+            Assert.AreEqual(firstString, firstString.CombineWithComma(secondString));
         }
 
 
