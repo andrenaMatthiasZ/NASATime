@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NASATime.Util.Test
 {
     [TestClass()]
-    public class StringExtensionAddWithCommaIfFirstStringIsNonTrivialTest
+    public class StringExtensionCombineWithCommaTest
     {
         private const string NON_TRIVIAL_FIRST_STRING = "text1";
         private const string NON_TRIVIAL_SECOND_STRING = "test2";
