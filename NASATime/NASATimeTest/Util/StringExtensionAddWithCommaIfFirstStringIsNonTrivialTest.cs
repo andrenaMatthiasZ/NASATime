@@ -11,20 +11,27 @@ namespace NASATime.Util.Test
     [TestClass()]
     public class StringExtensionAddWithCommaIfFirstStringIsNonTrivialTest
     {
+        private const string NON_TRIVIAL_FIRST_STRING = "text1";
+        private const string NON_TRIVIAL_SECOND_STRING = "test2";
+        String firstString;
+        String secondString;
+
         [TestMethod()]
         public void TwoNonTrivialStringsGetAdded()
         {
-            String firstString = "text1";
-            String secondString = "test2";
+            firstString = NON_TRIVIAL_FIRST_STRING;
+            secondString = NON_TRIVIAL_SECOND_STRING;
             Assert.AreEqual(firstString + ", " + secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
         }
 
         [TestMethod()]
         public void FirstStringTrivialReturnsSecond()
         {
-            String firstString = "";
-            String secondString = "test2";
+            firstString = "";
+            secondString = NON_TRIVIAL_SECOND_STRING;
             Assert.AreEqual(secondString, firstString.AddWithCommaIfFirstStringIsNonTrivial(secondString));
         }
+
+
     }
 }
